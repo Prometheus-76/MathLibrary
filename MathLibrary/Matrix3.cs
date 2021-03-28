@@ -152,7 +152,7 @@ namespace MathClasses
             transformationMatrix.m8 = (float)Math.Sin(angleRadians);
             transformationMatrix.m9 = (float)Math.Cos(angleRadians);
 
-            this *= transformationMatrix;
+            this = this * transformationMatrix;
         }
 
         public void AddRotateY(float angleRadians)
@@ -165,7 +165,7 @@ namespace MathClasses
             transformationMatrix.m7 = (float)-Math.Sin(angleRadians);
             transformationMatrix.m9 = (float)Math.Cos(angleRadians);
             
-            this *= transformationMatrix;
+            this = this * transformationMatrix;
         }
 
         public void AddRotateZ(float angleRadians)
@@ -178,7 +178,7 @@ namespace MathClasses
             transformationMatrix.m5 = (float)Math.Cos(angleRadians);
             transformationMatrix.m9 = 1f;
             
-            this *= transformationMatrix;
+            this = this * transformationMatrix;
         }
         
         #endregion
